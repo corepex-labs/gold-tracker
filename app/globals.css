@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink text-ivory font-sans;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(201, 162, 39, 0.08), transparent),
+      linear-gradient(rgba(201, 162, 39, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(201, 162, 39, 0.05) 1px, transparent 1px);
+    background-size: auto, 64px 64px, 64px 64px;
+  }
+
+  ::selection {
+    background: #c9a227;
+    color: #14110f;
+  }
+
+  *:focus-visible {
+    outline: 2px solid #e8c468;
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply font-mono text-[11px] uppercase tracking-widest2 text-gold-bright/80;
+  }
+
+  .hairline {
+    @apply border-line;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm bg-gold px-6 py-3 font-mono text-[13px] uppercase tracking-widest text-ink transition-colors duration-200 hover:bg-gold-bright;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm border border-line px-6 py-3 font-mono text-[13px] uppercase tracking-widest text-ivory transition-colors duration-200 hover:border-gold hover:text-gold-bright;
+  }
+
+  /* Seal / stamp motif used as the signature element on the tracking result */
+  .seal {
+    position: relative;
+    width: 84px;
+    height: 84px;
+    border-radius: 9999px;
+    border: 1.5px solid #c9a227;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .seal::before {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    border-radius: 9999px;
+    border: 1px dashed rgba(201, 162, 39, 0.5);
+  }
+
+  /* Perforated ticket-stub edge for the certificate card */
+  .stub-edge {
+    background-image: radial-gradient(circle, #14110f 3.5px, transparent 3.6px);
+    background-size: 16px 16px;
+    background-position: -8px center;
+    height: 16px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
