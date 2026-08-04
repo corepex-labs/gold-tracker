@@ -15,8 +15,8 @@ export default function Navbar() {
           <span className="flex h-9 w-9 items-center justify-center rounded-full border border-gold text-gold-bright font-display text-lg">
             A
           </span>
-          <span className="font-display text-xl tracking-wide text-ivory">
-            Aurum Transit
+            <span className="font-display text-xl tracking-wide text-ivory">
+            Imperial Transit
           </span>
         </Link>
         <nav className="hidden items-center gap-8 md:flex">

@@ -45,7 +45,7 @@ export default function HomePage() {
               vault.
             </h1>
             <p className="mt-6 max-w-md text-base leading-relaxed text-muted">
-              Aurum Transit moves bullion, dore and refined gold between
+              Imperial Transit moves bullion, dore and refined gold between
               mines, refineries and vaults, with a documented chain of
               custody from the moment a bar is sealed to the moment it&apos;s
               signed for.

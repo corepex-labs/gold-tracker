@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About — Aurum Transit",
+  title: "About — Imperial Transit",
 };
 
 const principles = [
@@ -24,13 +24,13 @@ export default function AboutPage() {
     <div>
       <section className="border-b border-line">
         <div className="mx-auto max-w-4xl px-6 py-20 md:py-28">
-          <p className="eyebrow mb-4">About Aurum Transit</p>
+          <p className="eyebrow mb-4">About Imperial Transit</p>
           <h1 className="font-display text-4xl leading-tight text-ivory md:text-5xl">
             Moving gold is simple. Proving it never left the chain is the
             hard part.
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted">
-            Aurum Transit specializes in the secure movement of bullion,
+            Imperial Transit specializes in the secure movement of bullion,
             dore and refined gold between mines, refineries, and bonded
             vaults. Founded by veterans of precious-metal logistics and
             insurance underwriting, we built the company around one

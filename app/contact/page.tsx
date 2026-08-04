@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact — Aurum Transit",
+  title: "Contact — Imperial Transit",
 };
 
 export default function ContactPage() {
@@ -24,7 +24,7 @@ export default function ContactPage() {
           <dl className="mt-10 space-y-6 border-t border-line pt-8">
             <div>
               <dt className="eyebrow mb-1">Operations</dt>
-              <dd className="text-sm text-ivory">ops@aurumtransit.example</dd>
+              <dd className="text-sm text-ivory">ops@imperialtransit.example</dd>
             </div>
             <div>
               <dt className="eyebrow mb-1">Registered Office</dt>

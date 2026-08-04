@@ -10,7 +10,7 @@ export default function Footer() {
               <span className="flex h-8 w-8 items-center justify-center rounded-full border border-gold text-gold-bright font-display text-base">
                 A
               </span>
-              <span className="font-display text-lg text-ivory">Aurum Transit</span>
+              <span className="font-display text-lg text-ivory">Imperial Transit</span>
             </div>
             <p className="mt-4 max-w-xs text-sm text-muted">
               Chain-of-custody logistics for bullion, dore and refined gold,
@@ -35,13 +35,13 @@ export default function Footer() {
               London, W1S 2BQ, United Kingdom
             </p>
             <p className="mt-3 text-sm text-muted">
-              ops@aurumtransit.example
+              ops@imperialtransit.example
             </p>
           </div>
         </div>
 
         <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-line pt-6 font-mono text-[11px] uppercase tracking-widest text-muted/70 md:flex-row md:items-center">
-          <span>&copy; {new Date().getFullYear()} Aurum Transit. All rights reserved.</span>
+          <span>&copy; {new Date().getFullYear()} Imperial Transit. All rights reserved.</span>
           <span>Demo build — not a licensed carrier</span>
         </div>
       </div>
