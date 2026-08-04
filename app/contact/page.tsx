@@ -29,7 +29,7 @@ export default function ContactPage() {
             <div>
               <dt className="eyebrow mb-1">Registered Office</dt>
               <dd className="text-sm text-ivory">
-                Airport Residential Area, Accra, Ghana
+                27 Bond Street, London, W1S 2BQ, United Kingdom
               </dd>
             </div>
             <div>

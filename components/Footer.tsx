@@ -31,8 +31,8 @@ export default function Footer() {
           <div>
             <p className="eyebrow mb-4">Registered Office</p>
             <p className="text-sm text-muted">
-              Airport Residential Area<br />
-              Accra, Ghana
+              27 Bond Street<br />
+              London, W1S 2BQ, United Kingdom
             </p>
             <p className="mt-3 text-sm text-muted">
               ops@aurumtransit.example
