@@ -61,9 +61,9 @@ create policy "Public can submit contact messages"
 insert into shipments
   (tracking_number, package_type, weight_kg, origin, destination, status, carrier, shipped_at, estimated_arrival, notes)
 values
-  ('AUR-2026-104822', '1kg Gold Bars (400 x 1oz)', 12.500, 'Accra, Ghana', 'Zurich, Switzerland', 'in_transit', 'Brink''s Global Logistics', now() - interval '2 days', now() + interval '2 days', 'Cleared Ghanaian export customs. Awaiting connecting flight in Dubai.'),
+  ('AUR-2026-104822', '1kg Gold Bars (400 x 1oz)', 12.500, 'London, United Kingdom', 'Zurich, Switzerland', 'in_transit', 'Brink''s Global Logistics', now() - interval '2 days', now() + interval '2 days', 'Cleared UK export customs. Awaiting connecting flight in Dubai.'),
   ('AUR-2026-104910', 'Gold Dore Bars', 340.000, 'Johannesburg, South Africa', 'London, United Kingdom', 'customs', 'Malca-Amit', now() - interval '4 days', now() + interval '1 days', 'Held for routine assay verification at destination bonded vault.'),
   ('AUR-2026-105033', '1oz Gold Coins (Krugerrand)', 3.100, 'Perth, Australia', 'Singapore', 'delivered', 'Loomis International', now() - interval '9 days', now() - interval '1 days', 'Delivered and signed for at bonded vault, Singapore Freeport.'),
   ('AUR-2026-105117', 'Gold Jewellery Consignment', 8.750, 'Dubai, UAE', 'New York, United States', 'out_for_delivery', 'Brink''s Global Logistics', now() - interval '3 days', now() + interval '6 hours', 'On final armored transport leg to receiving vault.'),
-  ('AUR-2026-105200', '100g Gold Bars', 6.000, 'Accra, Ghana', 'Toronto, Canada', 'delayed', 'Malca-Amit', now() - interval '5 days', now() + interval '3 days', 'Delayed by additional customs documentation review.')
+  ('AUR-2026-105200', '100g Gold Bars', 6.000, 'London, United Kingdom', 'Toronto, Canada', 'delayed', 'Malca-Amit', now() - interval '5 days', now() + interval '3 days', 'Delayed by additional customs documentation review.')
 on conflict (tracking_number) do nothing;

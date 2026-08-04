@@ -24,7 +24,7 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aurum Transit — Gold Shipment Tracking",
+  title: "Imperial Transit — Gold Shipment Tracking",
   description:
     "Track precious metal shipments in transit, from refinery or mine to vault, with real-time status and estimated arrival.",
 };

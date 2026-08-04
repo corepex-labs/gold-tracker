@@ -1,4 +1,4 @@
-# Aurum Transit — Gold Shipment Tracking
+# Imperial Transit — Gold Shipment Tracking
 
 A Next.js (App Router) + Supabase site for tracking gold shipments. Includes
 a home page, About, Contact, and a Track Shipment lookup that returns
@@ -78,7 +78,7 @@ SQL:
 insert into shipments
   (tracking_number, package_type, weight_kg, origin, destination, status, carrier, shipped_at, estimated_arrival, notes)
 values
-  ('AUR-2026-999999', '1kg Gold Bars', 5.000, 'Accra, Ghana', 'London, UK', 'in_transit', 'Brink''s Global Logistics', now(), now() + interval '3 days', 'Departed origin vault.');
+  ('AUR-2026-999999', '1kg Gold Bars', 5.000, 'London, UK', 'London, UK', 'in_transit', 'Brink''s Global Logistics', now(), now() + interval '3 days', 'Departed origin vault.');
 ```
 
 `status` must be one of: `booked`, `in_transit`, `customs`,

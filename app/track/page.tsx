@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import TrackPageClient from "./TrackPageClient";
 
 export const metadata: Metadata = {
-  title: "Track Shipment — Aurum Transit",
+  title: "Track Shipment — Imperial Transit",
 };
 
 export default function TrackPage() {
