@@ -8,17 +8,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#14110F",
-        panel: "#1C1813",
-        "panel-raised": "#221D17",
-        line: "#3A3024",
+        ink: "#FAFAF7",
+        panel: "#FFFFFF",
+        "panel-raised": "#F2F0EB",
+        line: "#E5E0D6",
         gold: {
           DEFAULT: "#C9A227",
           bright: "#E8C468",
           dim: "#8A6F26",
         },
-        ivory: "#F0EAE0",
-        muted: "#9C9284",
+        ivory: "#1A1612",
+        muted: "#6B6560",
         verdigris: "#6B8F7C",
         rust: "#B5623A",
       },
