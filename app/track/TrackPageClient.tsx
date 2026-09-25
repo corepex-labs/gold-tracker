@@ -101,7 +101,7 @@ export default function TrackPageClient() {
 
         {state.status === "success" && <ShipmentResult shipment={state.shipment} />}
 
-        {state.status === "idle" && (
+        {/* {state.status === "idle" && (
           <div className="mx-auto max-w-2xl rounded-sm border border-dashed border-line p-8 text-center">
             <p className="text-sm text-muted">
               No tracking number entered yet — try one of the demo shipments:
@@ -118,7 +118,7 @@ export default function TrackPageClient() {
               ))}
             </div>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );
