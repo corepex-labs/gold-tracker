@@ -9,14 +9,14 @@ const links = [
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-ink/90 backdrop-blur">
+    <header className="sticky top-0 z-50  bg-gray-800 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
         <Link href="/" className="flex items-center gap-3">
           <span className="flex h-9 w-9 items-center justify-center rounded-full border border-gold text-gold-bright font-display text-lg">
             A
           </span>
-            <span className="font-display text-xl tracking-wide text-ivory">
-            Imperial Transit
+            <span className=" text-xl tracking-wide text-yellow-400">
+            GoldTrack
           </span>
         </Link>
         <nav className="hidden items-center gap-8 md:flex">
@@ -24,15 +24,15 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="font-mono text-[12px] uppercase tracking-widest text-muted transition-colors hover:text-gold-bright"
+              className="font text-[15px]  tracking-widest text-white transition-colors hover:text-gold-bright"
             >
               {link.label}
             </Link>
           ))}
         </nav>
-        <Link href="/track" className="btn-outline hidden md:inline-flex !py-2 !px-4">
+        {/* <Link href="/track" className="btn-outline hidden md:inline-flex !py-2 !px-4">
           Track
-        </Link>
+        </Link> */}
       </div>
       {/* Mobile nav */}
       <nav className="flex items-center justify-center gap-6 border-t border-line py-3 md:hidden">
@@ -40,7 +40,7 @@ export default function Navbar() {
           <Link
             key={link.href}
             href={link.href}
-            className="font-mono text-[10px] uppercase tracking-widest text-muted transition-colors hover:text-gold-bright"
+            className="font-mono text-[11px] uppercase tracking-widest text-gray-200 transition-colors hover:text-gold-bright"
           >
             {link.label}
           </Link>

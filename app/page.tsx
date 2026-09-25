@@ -1,5 +1,6 @@
 import Link from "next/link";
 import TrackForm from "@/components/TrackForm";
+import  {Lock, Clock, Badge} from 'lucide-react'
 
 const stages = [
   {
@@ -34,47 +35,56 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative overflow-hidden border-b border-line">
-        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-2 md:py-28">
+      <section className=" bg-gray-700 overflow-hidden border-b border-line">
+        <div className="mx-auto  max-w-6xl gap-12 px-6 py-20 md:grid-cols-2 md:py-28">
           <div>
-            <p className="eyebrow mb-6">Precious Metal Logistics</p>
-            <h1 className="font-display text-5xl leading-[1.05] text-ivory md:text-6xl">
-              Every bar,
-              <br />
-              <span className="italic text-gold-bright">tracked</span> to the
-              vault.
+            <h1 className="font-display text-center text-5xl text-white md:text-6xl">
+              Track Your 
+              <span className="italic text-yellow-500">Gold</span> Shipment
             </h1>
-            <p className="mt-6 max-w-md text-base leading-relaxed text-muted">
-              Imperial Transit moves bullion, dore and refined gold between
-              mines, refineries and vaults, with a documented chain of
-              custody from the moment a bar is sealed to the moment it&apos;s
-              signed for.
+            <p className="my-6 mx-auto max-w-2xl text-center text-xl  text-gray-100">
+              Secure, insured and real-time tracking for your precious metals
             </p>
-            <div className="mt-8 flex flex-wrap gap-4">
+            {/* <div className="mt-8 flex flex-wrap gap-4">
               <Link href="/track" className="btn-gold">
                 Track a Shipment
               </Link>
               <Link href="/about" className="btn-outline">
                 How It Works
               </Link>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick-track panel — the hero's thesis moment */}
-          <div className="relative">
+          <div className="">
             <div className="rounded-sm border border-line bg-panel p-8 shadow-2xl shadow-black/40">
               <p className="eyebrow mb-1">Quick Track</p>
               <p className="mb-6 text-sm text-muted">
-                Enter a tracking number to see live status.
+                Enter a tracking number to see live status.   
               </p>
               <TrackForm compact />
-              <p className="mt-4 font-mono text-[11px] text-muted/70">
-                Try a demo number: AUR-2026-104822
-              </p>
+        
+            
             </div>
             <div className="pointer-events-none absolute -right-6 -top-6 hidden h-24 w-24 rounded-full border border-gold-dim/40 md:block" />
           </div>
+          <div className="flex justify-between max-w-xl mx-auto mt-10">
+      <div>
+      <Lock className="mx-auto mb-3" size={48} color="gold"/>
+      <p className="text-white">Fully Secure</p>
+      </div>
+      <div>
+      <Badge className="mx-auto mb-3" size={48} color="gold"/>
+      <p className="text-white">Certified Secure</p>
+      </div>
+      <div>
+      <Clock className="mx-auto mb-3"  size={48} color="gold"/>
+      <p className="text-white">Real-Time Updates</p>
+      </div>
+      
         </div>
+        </div>
+      
       </section>
 
       {/* Stats strip */}
