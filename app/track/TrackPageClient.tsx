@@ -53,7 +53,6 @@ export default function TrackPageClient() {
     } else {
       setState({ status: "idle" });
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [numberFromUrl]);
 
   function handleSubmit(value: string) {
